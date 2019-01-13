@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Firebase Test DB</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+
+    <script type="text/javascript" src="app.js"></script>   
+
+</head>
+<body>
+       <div class ="container">
+           <div><h1>Firebase - Test DB</h1></div><br>
+           <div class="form-group">
+               <label for="usr">name</label>
+               <input type="text" placeholder="your name" class="form-control" id="name"></input>
+               <label for="eusr">e-mail</label>
+               <input type="text" placeholder="your e-mail" class="form-control" id="email"></input>
+               <label for="tel">Telephone</label>
+               <input type="number" placeholder="your telephone" class="form-control" id="tel"></input>
+               <label for="adr">address</label>
+               <textarea name="name" rows="8" cols="80" id="address" class="form-control" placeholder="your address"></textarea>
+
+               <button id="sendbtn" name="Send" class="btn btn-primary" onclick="sendFun()">Send</button>
+               <button id="delbtn" class="btn btn-danger">Delete</button>
+               <button id="upbtn" class="btn btn-success">Update</button>
+           </div>
+       </div>
+
+
+        <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyB2B9J78mEYmyGDmZjdb3CMfvyewGSsUrs",
+            authDomain: "test-79bee.firebaseapp.com",
+            databaseURL: "https://test-79bee.firebaseio.com",     //เป็นโค้ดฝั่ง firebase
+            projectId: "test-79bee",
+            storageBucket: "test-79bee.appspot.com",
+            messagingSenderId: "198450119464"
+          };
+          firebase.initializeApp(config);
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "User" : {
+    "User1" : "ding",
+    "User2" : "nan",
+    "User3" : {
+      "address" : "phuket",
+      "e-mail" : "A@gmail.com",
+      "name" : "A",
+      "tel" : "09xxxx"
+    }
+  }
+}
